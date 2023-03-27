@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+           
+        }
+        div{
+            background-color: aliceblue;
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+       img:hover{
+            transform: scale(1.2,1.3);
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img >
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+</div>
+
+    <script>
+        var img=document.images
+        console.log(img)
+        for(i=1;i<=img.length;i++)
+        {
+            img[i].src=`../Images sample gallery/Acer/${i}.jpg.jpg`
+            img[i].style.width="350px"
+            img[i].style.height="300px"
+
+        }
+    </script>
+</body>
+</html>
